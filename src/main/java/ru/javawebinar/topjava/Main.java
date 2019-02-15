@@ -9,6 +9,6 @@ package ru.javawebinar.topjava;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.format("Привет всем!!! Ура!");
+        System.out.format("Привет всем!!! Ура! Заливаем");
     }
 }
