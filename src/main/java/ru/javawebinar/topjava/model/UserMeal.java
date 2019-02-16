@@ -2,12 +2,11 @@ package ru.javawebinar.topjava.model;
 
 import java.time.LocalDateTime;
 
+// бин - Еда пользователя
 public class UserMeal {
-    private final LocalDateTime dateTime;
-
-    private final String description;
-
-    private final int calories;
+    private final LocalDateTime dateTime; // время
+    private final String description; // описание
+    private final int calories; // калории
 
     public UserMeal(LocalDateTime dateTime, String description, int calories) {
         this.dateTime = dateTime;
@@ -18,11 +17,9 @@ public class UserMeal {
     public LocalDateTime getDateTime() {
         return dateTime;
     }
-
     public String getDescription() {
         return description;
     }
-
     public int getCalories() {
         return calories;
     }

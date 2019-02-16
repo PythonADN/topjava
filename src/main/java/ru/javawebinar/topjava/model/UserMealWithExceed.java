@@ -2,14 +2,12 @@ package ru.javawebinar.topjava.model;
 
 import java.time.LocalDateTime;
 
+// бин - Еда пользователя + целевая метка (превышение/непревышение по калориям в день)
 public class UserMealWithExceed {
-    private final LocalDateTime dateTime;
-
-    private final String description;
-
-    private final int calories;
-
-    private final boolean exceed;
+    private final LocalDateTime dateTime; // время
+    private final String description; // описание
+    private final int calories; // калории
+    private final boolean exceed; // превышение лимита калорий (целевая метка)
 
     public UserMealWithExceed(LocalDateTime dateTime, String description, int calories, boolean exceed) {
         this.dateTime = dateTime;

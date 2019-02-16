@@ -9,6 +9,7 @@ import java.time.Month;
 import java.util.Arrays;
 import java.util.List;
 
+// Вспомгательный метод для определения превышения калорий (getFilteredWithExceeded) по списку
 public class UserMealsUtil {
     public static void main(String[] args) {
         List<UserMeal> mealList = Arrays.asList(
@@ -19,11 +20,13 @@ public class UserMealsUtil {
                 new UserMeal(LocalDateTime.of(2015, Month.MAY, 31,13,0), "Обед", 500),
                 new UserMeal(LocalDateTime.of(2015, Month.MAY, 31,20,0), "Ужин", 510)
         );
+
         getFilteredWithExceeded(mealList, LocalTime.of(7, 0), LocalTime.of(12,0), 2000);
-//        .toLocalDate();
-//        .toLocalTime();
+//        .toLocalDate(); // преобразует LocalDate в Date (делать сумму по калориям в течении одного дня)
+//        .toLocalTime(); // преобразует LocalDate в Time (для фильтра по времени)
     }
 
+    //  Преобразования списка рациона пользователя в список с целевой меткой - превышения/непревышения по калориям (Метод оторый нужно реализовать в ДЗ-0)
     public static List<UserMealWithExceed>  getFilteredWithExceeded(List<UserMeal> mealList, LocalTime startTime, LocalTime endTime, int caloriesPerDay) {
         System.out.println("Первое ДЗ: TODO return filtered list with correctly exceeded field");
         return null;
