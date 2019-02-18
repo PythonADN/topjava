@@ -37,8 +37,6 @@ public class UserMealsUtil {
         // (число калорий для каждой даты) группируем список UserMeal по датам и суммируем калории
         Map<LocalDate, Integer> caloriesSumByDate = mealList.stream().collect(Collectors.groupingBy(um -> um.getDateTime().toLocalDate(), Collectors.summingInt(UserMeal::getCalories)));
 
-        // Изменение 1
-
         return mealList.stream()
                 .filter(um -> TimeUtil.isBetween(um.getDateTime().toLocalTime(), startTime, endTime)) // фильтр по диапозону времени
                 .map(um -> new UserMealWithExceed(um.getDateTime(), um.getDescription(), um.getCalories(), // map преобразует каждый элемент коллекции (в данному случае создаём для каждого элемента элемент UserMealWithExceed)
