@@ -26,7 +26,8 @@ public class UserMealsUtil {
 //        .toLocalTime(); // преобразует LocalDate в Time (для фильтра по времени)
     }
 
-    //  Преобразования списка рациона пользователя в список с целевой меткой - превышения/непревышения по калориям (Метод оторый нужно реализовать в ДЗ-0)
+    //  Преобразования списка рациона пользователя в список с целевой меткой - превышения/непревышения по калориям, согласно заданному временному диапозону
+    // (Метод оторый нужно реализовать в ДЗ-0)
     public static List<UserMealWithExceed>  getFilteredWithExceeded(List<UserMeal> mealList, LocalTime startTime, LocalTime endTime, int caloriesPerDay) {
         System.out.println("Первое ДЗ: TODO return filtered list with correctly exceeded field");
         return null;
