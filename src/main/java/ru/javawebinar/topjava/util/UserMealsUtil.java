@@ -43,4 +43,5 @@ public class UserMealsUtil {
                         caloriesSumByDate.get(um.getDateTime().toLocalDate()) > caloriesPerDay)) // последний аргумент UserMealWithExceed - превышение калорий в день
                 .collect(Collectors.toList()); // преобразуем stream в List
     }
+    // Добавил изменение
 }
